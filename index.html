@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foodie Choices</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>What do you want to eat, Foodie?</h1>
+        <div class="options">
+            <button onclick="showOptions('chai flask & classic maggie')">chai flask & classic maggie</button>
+            <button onclick="showOptions('chocolate waffle')">chocolate waffle</button>
+            <button onclick="showOptions('shawarma')">shawarma</button>
+            <button onclick="showOptions('pizza')">pizza</button>
+        </div>
+        
+        <div id="popUpCard" class="pop-up-card hidden">
+            <div class="pop-up-content">
+                <span class="close-button" onclick="closePopUpCard()">&times;</span>
+                <p id="popUpMessage"></p>
+                <img src="deliveryboy.gif">
+                <p>Your order will be placed by Mr. Piggu.</p>
+                <p>until then read this letter for you <a href="message.html">click me</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
